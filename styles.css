@@ -1,0 +1,110 @@
+body {
+    background-color: rgb(45,45,45);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    user-select: none;
+}
+
+#titulo, #rodape {
+    color:aliceblue;
+    text-align: center;
+}
+
+#rodape {
+    margin-top: auto;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(30,30,30);
+    width: 70vh;
+    height: 70vh;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 64px;
+}
+
+.toggles, .grade, #limparTudo {
+    background-color: rgb(45,45,45);
+    border-style: solid;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: rgb(210,210,210);
+    color: rgb(210,210,210);
+}
+
+#limparTudo:active
+{
+    background-color: rgb(210,210,210);
+    color: rgb(45,45,45);
+}
+
+.togglesSelected {
+    background-color: rgb(210,210,210);
+    color: rgb(45,45,45);
+}
+
+.cor {
+    border: none;
+    height: 40px;
+    width: 80px;
+    background-color: rgba(0,0,0,0);
+}
+
+label, h3 {
+    color: rgb(210,210,210);
+    text-align: center;
+}
+
+label {
+    margin-left: 16px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+.gridContainer {
+    background-color: rgb(255,255,255);
+    width: 60vh;
+    height: 60vh;
+    display: grid;    
+    gap: 0px;
+    margin: 0;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows:  repeat(16, 1fr);
+}
+
+.gridDiv {
+    background-color: rgba(0,0,0,0);
+    filter: brightness(1);
+}
+
+.showGrid {
+    border-style: solid;
+    border-color: rgb(0,0,0);
+    border-width:thin;
+}

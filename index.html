@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Etch-a-Sketch</title>
+</head>
+<body draggable="false">
+    <div id="titulo"><h1>Etch-a-Sketch</h1></div>
+    <div class="content">
+        <div class="sidebar" draggable="false">
+            <ul>
+                <li><input type="color" class="cor" id="cor" value="#000000"><label for="cor">Cor</label></li>
+                <li><input type="color" class="cor" id="corFundo" value="#FFFFFF"><label for="corFundo">Cor de fundo</label></li>
+                <li><button class="toggles" id="borracha">Borracha</button></li>
+                <li><button class="toggles" id="arcoIris">Arco-íris</button></li>
+                <li><button class="toggles" id="escurecer">Escurecer</button></li>
+                <li><button class="toggles" id="clarear">Clarear</button></li>
+                <li><button class="grade">Grade</button></li>
+                <li><button id="limparTudo">Limpar tudo</button></li>
+                <li><h3>Tamanho da grade: <span id="valorGrid">16</span> x <span id="valorGrid">16</span></h3></li>
+                <li><input type="range" min="1" max="64" value="16" id="gridSize"></li>
+            </ul>
+        </div>
+        <div class="mainContainer" draggable="false">
+            <div class="gridContainer" draggable="false">
+                
+            </div>
+        </div>
+        </div>
+    <div id="rodape"><h2>Direitos autorais: Gatão.</h2></div>
+</body>
+</html>
